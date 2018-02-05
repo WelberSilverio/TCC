@@ -1,0 +1,2 @@
+Caso queira uma demonstração funcional dos protótipos de telas
+abra o arquivo escola.xd e de play no modo prototype.
