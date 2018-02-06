@@ -30,10 +30,13 @@ data_nascimento date
 create table certificados(
 id_certificado int primary key not null auto_increment,
 id_prof_um int,
+foreign key (id_prof_um) references cad_user(id_user),
 id_prof_dois int,
+foreign key (id_prof_dois) references cad_user(id_user),
 data_emissao date,
 carga_horaria int,
-id_aluno int
+id_aluno int,
+foreign key (id_aluno) references alunos(id_aluno),
 )
 
 create table horarios(
@@ -48,18 +51,22 @@ id_presenca int primary key not null auto_increment,
 tipo_presenca varchar(15),
 data_chamada date,
 id_horario int,
-id_aluno int
+foreign key (id_horario) references horarios(id_horario),
+id_aluno int,
+foreign key (id_aluno) references alunos(id_aluno)
 )
 
 create table matriculas(
 id_matricula int primary key not null auto_increment, 
 data_matricula date,
 id_horario_um int,
+foreign key (id_horario_um) references horarios(id_horario),
 id_horario_dois int,
+foreign key (id_horario_dois) references horarios(id_horario),
 status_matricula varchar(15),
 modulo_atual varchar(20),
-id_aluno int
+id_aluno int,
+foreign key (id_aluno) references alunos(id_aluno)
 )
 
--- Criar as chaves estrangeiras
 -- Criar tabela de Permissoes
