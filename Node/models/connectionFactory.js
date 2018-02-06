@@ -8,7 +8,7 @@ function createDBConnection() {
             host: 'localhost',
             user: 'root',
             password: 'senha',
-            database: 'Vestuario'
+            database: 'TG'
         }
     );
 };
