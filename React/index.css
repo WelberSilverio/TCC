@@ -1,6 +1,8 @@
 .fundo{
     background-color: #42A5F5;
+    width: 100%;
 }
-.loginForm{
+.search-box{
     background-color: #ffffff;
+    padding: 25em;
 }
