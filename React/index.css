@@ -1,8 +1,20 @@
-.fundo{
+body{
     background-color: #42A5F5;
-    width: 100%;
+    margin: 0 auto;
 }
-.search-box{
-    background-color: #ffffff;
-    padding: 25em;
+.container{
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 6%;
+    border-radius: 10px;
+}
+input{
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 30px;  
 }
