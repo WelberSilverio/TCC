@@ -3,5 +3,18 @@ input{
     width: 300px;
     font-size: 18px;
     margin-bottom: 20px;
-    padding-left: 30px;  
+    padding-left: 30px; 
+    border-radius: 5px; 
+    text-align: center;
+}
+.menu-login{
+    margin: 30%;
+    padding-top: 20%;
+    border-bottom: 2px;
+    border-color: #000000;
+}
+.btn-info{
+    border-color: #0288D1; 
+    background-color: #B3E5FC;
+    color: #FFFFFF;
 }
