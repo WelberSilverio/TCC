@@ -4,7 +4,8 @@ input{
     font-size: 18px;
     margin-bottom: 20px;
     padding-left: 30px; 
-    border-radius: 5px; 
+    padding-right: 30px;
+    border-radius: 25px; 
     text-align: center;
 }
 .menu-login{
@@ -14,7 +15,9 @@ input{
     border-color: #000000;
 }
 .btn-info{
-    border-color: #0288D1; 
-    background-color: #B3E5FC;
-    color: #FFFFFF;
+    border-color: #29B6F6; 
+    background-color: #FFFFFF;
+    color: #29B6F6;
+    padding: 20px,10px,20px,10px;
+    cursor: pointer;
 }
