@@ -2,11 +2,12 @@ input{
     /* height: 45px;
     width: 300px; */
     /* font-size: 18px; */
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 30px; 
     padding-right: 30px;
     /* border-radius: 25px;  */
-    text-align: center;
+    /* text-align: center; */
 }
 .menu-login{
     margin: 30%;
@@ -14,8 +15,8 @@ input{
     border-bottom: 2px;
     border-color: #000000;
 }
-.btn-info{
-    /* border-color: #29B6F6;  */
+.btn{
+    /* border-color: #2196f3;  */
     /* background-color: #FFFFFF; */
     /* color: #29B6F6; */
     padding: 20px,10px,20px,10px;

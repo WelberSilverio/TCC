@@ -5,20 +5,23 @@ class MenuLogin extends Component {
   render() {
     return (
       <div className="menu-login">
-        <form>
-          <div className="input-field s1">
-            <input id="usuario" type="text" className="validate" />
-            <label for="usuario">Usuario</label>
-          </div>
-          <div className="input-field s1">
-            <input id="senha" type="text" className="validate" />
-            <label for="senha">Senha</label>
-          </div>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Entrar
+        <div class="card grey lighten-2">
+          <form>
+            <div className="input-field col s3">
+              <input id="usuario" type="text" className="validate " />
+              <label for="usuario" className="blue-text text-lighten-2 center-align">Usuario</label>
+            </div>
+            <div className="input-field col s3">
+              <input id="senha" type="password" className="validate " />
+              <label for="senha" className="blue-text text-lighten-2 center-align">Senha</label>
+            </div>
+            
+              <button class="btn waves-effect waves-light blue lighten-2" type="submit" name="action">Entrar
               <i class="material-icons right">send</i>
-          </button>
-
-        </form>
+              </button>
+           
+          </form>
+        </div>
       </div>
     );
   }
