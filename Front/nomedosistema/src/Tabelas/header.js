@@ -3,12 +3,19 @@ import './table.css';
 
 class HeadTable extends Component {
     render() {
+
+        let litatitulos = this.props.titulos.map(function (valor) {
+            return (
+                <th key={valor.colvalor}>{valor.colname}</th>
+            );
+        });
+
         return (
             <thead>
-            <tr>
-                <th>Coluna Title 1</th>
-            </tr>
-        </thead>
+                <tr>
+                    {litatitulos}
+                </tr>
+            </thead>
         );
     }
 }
