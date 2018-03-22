@@ -27,5 +27,6 @@ module.exports = (DataType, sequelize) => {
 			}
 		},
 	},{tableName:'Cad_Users'});
+	
 	return User;
 };

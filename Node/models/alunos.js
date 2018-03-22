@@ -80,5 +80,6 @@ module.exports = (DataType, sequelize) => {
 		}
 	},{tableName:'Alunos'}
 );
+
 	return Aluno;
 };

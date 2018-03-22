@@ -62,5 +62,6 @@ Matricula.belongsTo(Aluno, {foreignKey: 'fk_aluno', targetKey: 'id_aluno'});
 Matricula.belongsTo(Horario, {foreignKey:'fk_horario_um', targetKey:'id_horario_um'});
 Matricula.belongsTo(Horario, {foreignKey:'fk_horario_dois', targetKey:'id_horario_dois'});
 
+
 return Matricula;
 };
