@@ -17,6 +17,68 @@ aluno.prototype.pesquisaCPF = function(data, callback) {
 	this._connection.end();
 };
 
-module.exports = function(app) {
-	return aluno;
+module.exports = (DataType, sequelize) => {
+	var Aluno = sequelize.define('Alunos',{
+		id_aluno:{
+			type: DataType.INTEGER,
+			primaryKey: true,
+			autoIncrement: true
+		},
+		nome_completo:{
+			type:DataType.STRING,
+			validate:{
+				notEmpty: true
+			}
+		},
+		cpf:{
+			type:DataType.STRING,
+			validate:{
+				notEmpty: true
+			}
+		},
+		rg:{
+			type:DataType.STRING
+		},
+		orgao_expedidor:{
+			type:DataType.STRING			
+		},
+		estado:{
+			type:DataType.STRING			
+		},
+		cep:{
+			type:DataType.STRING			
+		},
+		rua:{
+			type:DataType.STRING			
+		},
+		numero_resid:{
+			type:DataType.STRING			
+		},
+		bairro:{
+			type:DataType.STRING			
+		},
+		complemento:{
+			type:DataType.STRING			
+		},
+		telefone:{
+			type:DataType.STRING			
+		},
+		celular:{
+			type:DataType.STRING			
+		},
+		sexo:{
+			type:DataType.STRING			
+		},
+		deficiencia:{
+			type:DataType.BOOLEAN			
+		},
+		tipo_deficiencia:{
+			type:DataType.STRING			
+		},
+		data_nascimento:{
+			type:DataType.DATEONLY			
+		}
+	},{tableName:'Alunos'}
+);
+	return Aluno;
 };

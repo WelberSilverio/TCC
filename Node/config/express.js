@@ -2,7 +2,7 @@ var express = require("express");
 var load = require('express-load');
 var bodyParser = require('body-parser');
 
-module.exports = function() {
+module.exports = () => {
 
 	var app = express();
 
@@ -10,7 +10,8 @@ module.exports = function() {
 	app.use(bodyParser.urlencoded({extended:true}));
 	app.use(bodyParser.json());
 
-	load('models')
+	load('./config/db.js')
+	.then('models')
 	.then('routes')
 	.into(app);
 
