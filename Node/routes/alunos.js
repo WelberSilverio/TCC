@@ -1,36 +1,41 @@
-module.exports = function (app) {
+module.exports = (app) => {
 
-	app.post('/alunos/cadastro', function (req, res) {
-
-		// var aluno = req.body;
-		// var connection = app.models.connectionFactory();
-		// var alunoSave = new app.models.aluno(connection);
-
-		// alunoSave.cadastro(aluno, function (err, result) {
-		// 	//ação
-		// })
+	app.post('/alunos/cadastro',(req, res) => {
+		Aluno.create(req.body)
+		.then(result => res.json(result))
+		.catch(error => {
+			res.status(412).json({ msg: error.message });
+		});
 	});
 
 	app.get('/alunos/pesquisa', function (req, res) {
-
-		// var aluno = req.body;
-		// var connection = app.models.connectionFactory();
-		// var alunoSearch = new app.models.aluno(connection);
-
-		// alunoSearch.pesquisa(aluno, function (err, result) {
-
-		// })
+		Aluno.findAll({ where: req.params })
+		.then(result => {
+			if (result) {
+				res.json(result);
+			}
+			else {
+				res.sendStatus(404);
+			}
+		})
+		.catch(error => {
+			res.status(412).json({ msg: error.message });
+		});
 	});
 
 	app.get('/alunos/pesquisaCPF', function (req, res) {
-
-		// var aluno = req.body;
-		// var connection = app.models.connectionFactory();
-		// var alunoSearch = new app.models.aluno(connection);
-
-		// alunoSearch.pesquisaCPF(aluno, function (err, result) {
-
-		// })
+		User.findOne({ where: req.params })
+		.then(result => {
+			if (result) {
+				res.json(result);
+			}
+			else {
+				res.sendStatus(404);
+			}
+		})
+		.catch(error => {
+			res.status(412).json({ msg: error.message });
+		});
 	});
 
 };
