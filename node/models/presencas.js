@@ -33,6 +33,6 @@ module.exports = (DataType, sequelize) => {
 	);
 	Presenca.belongsTo(Aluno, { foreignKey: 'fk_aluno', targetKey: 'id_aluno' });
 	Presenca.belongsTo(Horario, { foreignKey: 'fk_horario', targetKey: 'id_horario' });
-	
+	 
 	return Presenca;
 };

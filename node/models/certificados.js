@@ -33,7 +33,7 @@ module.exports = (DataType, sequelize) => {
 				notEmpty: true
 			}
 		}
-	}, { tableName: 'Certificados' }
+	}, { tableName: 'Certificados' } 
 	);
 	Certificado.belongsTo(Aluno, { foreignKey: 'fk_aluno', targetKey: 'id_aluno' });
 	Certificado.belongsTo(User, { foreignKey: 'fk_prof_um', targetKey: 'id_prof_um' });

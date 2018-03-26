@@ -23,7 +23,7 @@ module.exports = (DataType, sequelize) => {
 				notEmpty: true
 			}
 		}
-	},{tableName:'Horarios'}
+	},{tableName:'Horarios'} 
 );
 	return Horario;
 };
