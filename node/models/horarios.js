@@ -6,19 +6,19 @@ module.exports = (DataType, sequelize) => {
 			autoIncrement: true
 		},
 		dia: {
-			type:DataType.STRING,
+			type:DataType.STRING(3),
 			validate:{
 				notEmpty: true
 			}
 		},
 		hr_inicio:{
-			type:DataType.STRING,
+			type:DataType.STRING(10),
 			validate:{
 				notEmpty: true
 			}
 		},
 		hr_fim:{
-			type:DataType.STRING,
+			type:DataType.STRING(10),
 			validate:{
 				notEmpty: true
 			}

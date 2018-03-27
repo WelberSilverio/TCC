@@ -33,13 +33,13 @@ module.exports = (DataType, sequelize) => {
 			}
 		},
 		status_matricula:{
-			type:DataType.STRING,
+			type:DataType.STRING(20),
 			validate:{
 				notEmpty: true
 			}
 		},
 		modulo_atual:{
-			type:DataType.STRING
+			type:DataType.STRING(30)
 		},
 		id_aluno: {
 			type: DataType.INTEGER,

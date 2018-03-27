@@ -15,13 +15,13 @@ module.exports = (DataType, sequelize) => {
 			autoIncrement: true
 		},
 		user: {
-			type:DataType.STRING,
+			type:DataType.STRING(30),
 			validate:{
 				notEmpty: true
 			}
 		},
 		senha:{
-			type:DataType.STRING,
+			type:DataType.STRING(15),
 			validate:{
 				notEmpty: true
 			}
