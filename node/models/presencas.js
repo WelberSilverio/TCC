@@ -6,7 +6,7 @@ module.exports = (DataType, sequelize) => {
 			autoIncrement: true
 		},
 		tipo_presenca: {
-			type: DataType.STRING,
+			type: DataType.STRING(20),
 			validate: {
 				notEmpty: true
 			}
