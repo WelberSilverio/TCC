@@ -5,21 +5,34 @@ import './table.css';
 class Table extends Component {
     render() {
 
-        let titulos = [
-            { colname: "Teste", colvalor: "21" },
-            { colname: "Teste1", colvalor: "22" },
-            { colname: "Teste2", colvalor: "23" }
-        ];
+        let data = [
+            {
+                PedidoOriginal: 12312,
+                SlipOriginal: 1231,
+                GemcoOriginal: 12312,
+                NFOriginal: 12312,
+                DTOriginal: '01/01/2018',
+                ValorOriginal: 10.20
+            },
+            {
+                PedidoOriginal: 12312,
+                SlipOriginal: 1231,
+                GemcoOriginal: 12312,
+                NFOriginal: 12312,
+                DTOriginal: '01/01/2018',
+                ValorOriginal: 10.20
+            }
+        ]
 
-        let head = Object.keys(titulos[0]);
+        let headers = Object.keys(data[0]);
 
         return (
             <div className="row">
                 <div className="col s12 m12 l6 offset-l2 center">
-                    <table cellpadding="1" cellspacing="1" className="table table-hover responsive-table bordered striped" id="myTable">
+                    <table cellpadding="1" cellspacing="1" className="table bordered highlight responsive-table">
                         <Header titulos={titulos} />
                         <tbody >
-                            <TableRows data={titulos} headers={head}/>
+                            <TableRows data={data} headers={headers} />
                         </tbody>
                     </table>
                 </div>

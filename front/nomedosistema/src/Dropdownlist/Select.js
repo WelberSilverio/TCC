@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 
 class Select extends Component {
     render() {
+        let opt = this.props.data.map((value) => {
+            <option value="{}">{}</option>  
+        });
         return (
             <select>
-                <option value="" disabled selected>Escolha uma opção</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="" disabled selected>Escolha o Tipo de Presença:</option>
+                {opt}
             </select>
         );
     }

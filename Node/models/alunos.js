@@ -1,22 +1,3 @@
-function aluno(connection) {
-	this._connection = connection;
-};
-
-aluno.prototype.cadastro = function(data, callback) {
-	this._connection.query('INSERT INTO alunos SET ?',data, callback);
-	this._connection.end();
-};
-
-aluno.prototype.pesquisa = function(data, callback) {
-	this._connection.query('SELECT ID_ALUNO, NOME_COMPLETO from alunos WHERE NOME_COMPLETO LIKE ?',data, callback);
-	this._connection.end();
-};
-
-aluno.prototype.pesquisaCPF = function(data, callback) {
-	this._connection.query('SELECT ID_ALUNO, NOME_COMPLETO from alunos WHERE CPF = ?',data, callback);
-	this._connection.end();
-};
-
 module.exports = (DataType, sequelize) => {
 	var Aluno = sequelize.define('Alunos',{
 		id_aluno:{
@@ -32,12 +13,14 @@ module.exports = (DataType, sequelize) => {
 		},
 		cpf:{
 			type:DataType.STRING(11),
+			unique: true,
 			validate:{
 				notEmpty: true
 			}
 		},
 		rg:{
-			type:DataType.STRING(9)
+			type:DataType.STRING(9),
+			unique: true
 		},
 		orgao_expedidor:{
 			type:DataType.STRING(7)			
