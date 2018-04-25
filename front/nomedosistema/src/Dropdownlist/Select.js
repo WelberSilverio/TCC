@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Select extends Component {
     render() {
         let opt = this.props.data.map((value) => {
+            return(
             <option value="{}">{}</option>  
+            )
         });
         return (
             <select>
