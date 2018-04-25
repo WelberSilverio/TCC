@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import MenuLogin from './Login/Login';
+import Main from './Main/Main';
 
-ReactDOM.render(<MenuLogin/>, document.getElementById('root'));
+ReactDOM.render(<Main/>, document.getElementById('root'));
 registerServiceWorker();
