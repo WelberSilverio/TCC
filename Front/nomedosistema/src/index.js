@@ -6,5 +6,5 @@ import Main from './Main/Main';
 import MenuLogin from './Login/Login';
 import Cadastro from './Cadastro/Cadastro';
 
-ReactDOM.render(<Cadastro/>, document.getElementById('root'));
+ReactDOM.render(<Main/>, document.getElementById('root'));
 registerServiceWorker();

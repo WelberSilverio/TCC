@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, NavLink, HashRouter } from 'react-router-dom'
+import { Route, HashRouter } from 'react-router-dom'
 import MenuLogin from '../Login/Login'
 import Home from '../Home/Home'
 import Cadastro from '../Cadastro/Cadastro'
@@ -8,9 +8,9 @@ class Main extends Component {
         return (
             <HashRouter>
                 <div className="content">
-                    <Route path="/" Component={Home} />
-                    <Route path="/login" Component={MenuLogin} />
-                    <Route path="/cadastro" Component={Cadastro} />
+                    <Route exact path="/" component={Home} />
+                    <Route path="/login" component={MenuLogin} />
+                    <Route path="/cadastro" component={Cadastro} />
                 </div>
             </HashRouter>
         );

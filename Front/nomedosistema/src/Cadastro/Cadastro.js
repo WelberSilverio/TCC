@@ -25,12 +25,12 @@ class Cadastro extends Component {
                                 <label for="dtNasc" className="blue-text text-lighten-2 center-align">Data de Nascimento</label>
                             </div>
                             <div className="input-field col s3">
-                                <select>
+                                <select id="sexo">
                                     <option value="" disabled selected>Selecione:</option>
                                     <option value="Mas">Masculino</option>
                                     <option value="Fem">Feminino</option>
                                 </select>
-                                <label>Sexo</label>
+                                <label for="sexo">Sexo</label>
                             </div>
                         </div>
                         <div className="Row">
@@ -46,6 +46,8 @@ class Cadastro extends Component {
                                 <input id="estado" type="text" className="" />
                                 <label for="estado" className="blue-text text-lighten-2 center-align">Estado</label>
                             </div>
+                        </div>
+                        <div className="Row">
                         </div>
                         <button className="btn waves-effect waves-light blue lighten-2" type="submit" name="action">Finalizar Cadastro</button>
                     </div>

@@ -29,7 +29,6 @@ body {
 }
 
 .select-wrapper input.select-dropdown {
-  border-bottom: 1px solid #64b5f6;
   color: #64b5f6;
 }
 
@@ -79,4 +78,24 @@ body {
 
 button{
   margin: 5%; 
+}
+
+button a{
+  color: #ffffff;
+} 
+
+.picker__clear{
+  color: #e91e63;
+}
+
+.administracao{
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.decrProj{
+  text-align: center;
+  margin: 3%;
+  padding: 5%;
+  font-size: 1.2rem;
 }
