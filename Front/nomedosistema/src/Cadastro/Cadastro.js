@@ -48,6 +48,54 @@ class Cadastro extends Component {
                             </div>
                         </div>
                         <div className="Row">
+                            <div className="input-field col s4 offset-s2">
+                                <input id="Telefone" type="text" className="" />
+                                <label for="Telefone" className="blue-text text-lighten-2 center-align">Telefone</label>
+                            </div>
+                            <div className="input-field col s4">
+                                <input id="Celular" type="text" className="" />
+                                <label for="Celular" className="blue-text text-lighten-2 center-align">Celular</label>
+                            </div>
+                        </div>
+                        <div className="Row">
+                            <div className="input-field col s4 offset-s2">
+                                <input id="CEP" type="text" className="" />
+                                <label for="CEP" className="blue-text text-lighten-2 center-align">CEP</label>
+                            </div>
+                            <div className="input-field col s4">
+                                <input id="Bairro" type="text" className="" />
+                                <label for="Bairro" className="blue-text text-lighten-2 center-align">Bairro</label>
+                            </div>
+                        </div>
+                        <div className="Row">
+                            <div className="input-field col s6 offset-s2">
+                                <input id="Endereco" type="text" className="" />
+                                <label for="Endereco" className="blue-text text-lighten-2 center-align">Endereço</label>
+                            </div>
+                            <div className="input-field col s2">
+                                <input id="Numero" type="text" className="" />
+                                <label for="Numero" className="blue-text text-lighten-2 center-align">Numero</label>
+                            </div>
+                        </div>
+                        <div className="Row">
+                            <div className="input-field col s8 offset-s2">
+                                <div className="Row">
+                                    <label>Portador de Deficiencia?</label>
+                                </div>
+                                <div className="Row">
+                                    <div className="input-field col s4 offset-s2">
+                                        <p>
+                                            <input class="with-gap" name="group1" type="radio" id="sim" />
+                                            <label for="sim">Sim</label>
+                                        </p>
+                                    </div>
+                                    <div className="input-field col s4"><p>
+                                        <input class="with-gap" name="group1" type="radio" id="nao" />
+                                        <label for="nao">Não</label>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <button className="btn waves-effect waves-light blue lighten-2" type="submit" name="action">Finalizar Cadastro</button>
                     </div>
