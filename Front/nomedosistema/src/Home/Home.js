@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'react-router-dom/NavLink';
 
-
 class Home extends Component {
     render() {
         return (
@@ -18,7 +17,6 @@ class Home extends Component {
                     <div className="Row">
                         <button className="btn waves-effect waves-light blue lighten-2" type="submit" name="action">Escolha um Curso</button>
                     </div>
-
                 </div>
                 <div className="administracao">
                     <Link to={"/login"}>Administração</Link>
